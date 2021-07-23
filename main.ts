@@ -1,3 +1,4 @@
+//-------------------------------
 // basic.forever(function () {
 //     basic.showLeds(`
 //         . # # # .
@@ -119,9 +120,37 @@
 //         `)
 //     basic.pause(100)
 // })
-//Fun thing I did for my friend ^^^
+//-------------------------------
+//Fun joke I made for my friend ^^^
 
-//Voting Game
 
-let myName = "Aidan"
-basic.showString(myName)
+
+
+//-------------------------------
+// let myName = "Aidan"
+// basic.showString(myName)
+//-------------------------------
+//Little test of showString ^^
+
+
+
+//Voting Thing
+input.onButtonPressed(Button.A, function() {
+    basic.showLeds(`
+    . . . . .
+    . . . . #
+    . . . # .
+    # . # . .
+    . # . . .
+    `)
+})
+
+input.onButtonPressed(Button.B, function () {
+    basic.showLeds(`
+    # . . . #
+    . # . # .
+    . . # . .
+    . # . # .
+    # . . . #
+    `)
+})
